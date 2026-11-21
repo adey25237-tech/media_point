@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320">
+  <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#4c1d95"/><stop offset="1" stop-color="#100a20"/></linearGradient></defs>
+  <rect width="600" height="320" fill="url(#g)"/>
+  <circle cx="300" cy="150" r="98" fill="none" stroke="#a78bfa" stroke-width="2" opacity=".45"/>
+  <circle cx="300" cy="150" r="68" fill="none" stroke="#f0abfc" stroke-width="2" opacity=".65"/>
+  <path d="M300 75l65 38v75l-65 38-65-38v-75z" fill="#7c3aed" stroke="#ddd6fe" stroke-width="4"/>
+  <path d="M300 75v75l65 38M300 150l-65 38" fill="none" stroke="#d8b4fe" stroke-width="4"/>
+  <circle cx="300" cy="150" r="18" fill="#fef08a"/>
+  <path d="M130 83l8 18 18 8-18 8-8 18-8-18-18-8 18-8zM461 187l7 15 15 7-15 7-7 15-7-15-15-7 15-7z" fill="#f0abfc"/>
+  <text x="300" y="300" text-anchor="middle" fill="#f3f0ff" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="3">2D &amp; 3D ANIMATION</text>
+</svg>

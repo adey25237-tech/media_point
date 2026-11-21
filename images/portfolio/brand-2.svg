@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="130" viewBox="0 0 300 130">
+  <rect width="300" height="130" rx="12" fill="#100a20"/>
+  <circle cx="69" cy="65" r="27" fill="none" stroke="#f0abfc" stroke-width="3"/>
+  <circle cx="69" cy="65" r="15" fill="none" stroke="#a78bfa" stroke-width="3"/>
+  <circle cx="69" cy="65" r="4" fill="#fff"/>
+  <text x="178" y="73" text-anchor="middle" fill="#f3f0ff" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="3">NEBULA</text>
+  <text x="178" y="96" text-anchor="middle" fill="#f0abfc" font-family="Arial,sans-serif" font-size="9" letter-spacing="3">BEYOND THE ORDINARY</text>
+</svg>

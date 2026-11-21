@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="130" viewBox="0 0 300 130">
+  <rect width="300" height="130" rx="12" fill="#100a20"/>
+  <path d="M39 45h28l-16 20h18L42 91l8-20H34z" fill="#fef08a"/>
+  <text x="178" y="73" text-anchor="middle" fill="#f3f0ff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="2">CYBERIX</text>
+  <text x="178" y="96" text-anchor="middle" fill="#a78bfa" font-family="Arial,sans-serif" font-size="9" letter-spacing="3">CREATE THE FUTURE</text>
+</svg>

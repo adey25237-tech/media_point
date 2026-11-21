@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA POINT - Digital Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-bar">
+            <a href="#home" class="logo">
+                <span class="logo-badge">
+                    <img src="images/logo.svg" alt="Media Point logo">
+                </span>
+                <span>MEDIA POINT</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="btn btn-primary desktop-cta" onclick="openModal('Free Trial Session')">Free Trial</button>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button class="btn btn-primary" onclick="openModal('Free Trial Session')">Free Trial / Book Now</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div>
+                <span class="tag">Creative Media &amp; Digital Studio</span>
+                <h1>All in One <span>Digital Studio</span> for Web, Motion &amp; Vision.</h1>
+                <p>
+                    We create clean visual identities, video edits, photography, and 2D/3D animations
+                    for businesses, creators, and events.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="openModal('Free Trial Project')">Free Trial Project</button>
+                    <a href="#services" class="btn btn-outline">Explore Services</a>
+                </div>
+            </div>
+
+            <div class="card hero-card">
+                <img src="images/studio.svg" alt="Media Point Studio">
+                <div class="hero-status">
+                    <div>
+                        <strong>Studio Production</strong>
+                        <div style="font-size: 12px; color: #9caec0;">Design, Video &amp; Animation</div>
+                    </div>
+                    <span class="status-badge">Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <small>Our Expertise</small>
+                <h2>WHAT WE DO</h2>
+                <p>Practical and creative media solutions for brands and projects.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="card service-card">
+                    <img src="images/graphic-design.svg" alt="Graphic Design">
+                    <h3>Graphic Design &amp; Branding</h3>
+                    <ul class="service-list">
+                        <li>Logos &amp; Brand Identity</li>
+                        <li>Banners, Flyers &amp; Posters</li>
+                        <li>Print &amp; Social Media Graphics</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span style="color: #22d3ee;">01 / Service</span>
+                        <button class="link-btn" onclick="openModal('Graphic Design & Branding')">Request Quote &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="card service-card">
+                    <img src="images/services/photography.svg" alt="Photography">
+                    <h3>Photography &amp; Videography</h3>
+                    <ul class="service-list">
+                        <li>Product &amp; Event Photography</li>
+                        <li>Promotional &amp; Studio Shoots</li>
+                        <li>Clean Framing &amp; Lighting Setup</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span style="color: #22d3ee;">02 / Service</span>
+                        <button class="link-btn" onclick="openModal('Photography & Videography')">Request Quote &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="card service-card">
+                    <img src="images/services/video-editing.svg" alt="Video Editing">
+                    <h3>Video Editing &amp; Post-Production</h3>
+                    <ul class="service-list">
+                        <li>Reels, Shorts &amp; Event Highlights</li>
+                        <li>Transitions, Titles &amp; Audio Sync</li>
+                        <li>Color Correction &amp; Export</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span style="color: #22d3ee;">03 / Service</span>
+                        <button class="link-btn" onclick="openModal('Video Editing & Post-Production')">Request Quote &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="card service-card">
+                    <img src="images/services/animation.svg" alt="2D and 3D Animation">
+                    <h3>2D &amp; 3D Animation</h3>
+                    <ul class="service-list">
+                        <li>2D Motion &amp; Explainer Clips</li>
+                        <li>3D Product &amp; Scene Renders</li>
+                        <li>Animated Intros &amp; Visuals</li>
+                    </ul>
+                    <div class="service-footer">
+                        <span style="color: #22d3ee;">04 / Service</span>
+                        <button class="link-btn" onclick="openModal('2D & 3D Animation')">Request Quote &rarr;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-action">
+                <button class="btn btn-outline" onclick="openModal('All Services Inquiry')">Ask About Custom Work</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <div class="section-header">
+                <small>Sample Work</small>
+                <h2>SELECTED WORK</h2>
+                <p>Sample items across branding, product shots, and 3D visuals.</p>
+            </div>
+
+            <div class="work-category">
+                <h3>Logos &amp; Brand Marks</h3>
+                <div class="card">
+                    <div class="portfolio-grid">
+                        <div class="logo-box" onclick="openModal('Logo Sample - Vortex')">
+                            <img src="images/portfolio/brand-1.svg" alt="Brand logo sample 1">
+                        </div>
+                        <div class="logo-box" onclick="openModal('Logo Sample - Nebula')">
+                            <img src="images/portfolio/brand-2.svg" alt="Brand logo sample 2">
+                        </div>
+                        <div class="logo-box" onclick="openModal('Logo Sample - Cyberix')">
+                            <img src="images/portfolio/brand-3.svg" alt="Brand logo sample 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-category">
+                <h3>Product Photography</h3>
+                <div class="card">
+                    <div class="portfolio-grid">
+                        <div class="work-thumb" onclick="openModal('Product Shot 1')">
+                            <img src="images/portfolio/product-1.svg" alt="Product Shot 1">
+                        </div>
+                        <div class="work-thumb" onclick="openModal('Product Shot 2')">
+                            <img src="images/portfolio/product-2.svg" alt="Product Shot 2">
+                        </div>
+                        <div class="work-thumb" onclick="openModal('Product Shot 3')">
+                            <img src="images/portfolio/product-3.svg" alt="Product Shot 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-category">
+                <h3>3D Models &amp; Scenes</h3>
+                <div class="card">
+                    <div class="portfolio-grid">
+                        <div class="work-thumb" onclick="openModal('3D Render 1')">
+                            <img src="images/portfolio/render-1.svg" alt="3D Render 1">
+                        </div>
+                        <div class="work-thumb" onclick="openModal('3D Render 2')">
+                            <img src="images/portfolio/render-2.svg" alt="3D Render 2">
+                        </div>
+                        <div class="work-thumb" onclick="openModal('3D Render 3')">
+                            <img src="images/portfolio/render-3.svg" alt="3D Render 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="about">
+        <div class="container">
+            <div class="footer-grid">
+                <div id="about-us">
+                    <h4>About Us</h4>
+                    <p>
+                        MEDIA POINT is a creative media studio based in West Bengal, India. We specialize in graphic design, photography, videography, and 2D/3D animation to help businesses and creators bring their ideas to life.
+                    </p>
+                </div>
+
+                <div id="contact">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>Email: media@mediapoint@gmail.com</li>
+                        <li>Phone: +91 9088164721</li>
+                        <li>Location: West Bengal, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="inquiryModal">
+        <div class="modal-box">
+            <button class="close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+            <h3 id="modalTitle">Project Inquiry</h3>
+            <p>Fill out the form below to send a sample request.</p>
+            <form id="inquiryForm">
+                <div class="form-group">
+                    <label for="userName">Your Name</label>
+                    <input type="text" id="userName" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email Address</label>
+                    <input type="email" id="userEmail" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="userMessage">Project Details</label>
+                    <textarea id="userMessage" rows="3" placeholder="Write a short message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toastBox">Request submitted successfully!</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
