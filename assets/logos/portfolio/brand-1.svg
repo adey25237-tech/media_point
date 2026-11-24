@@ -2,5 +2,5 @@
   <rect width="300" height="130" rx="12" fill="#100a20"/>
   <path d="M45 83l18-40 18 40-18-10z" fill="#a78bfa"/>
   <text x="168" y="75" text-anchor="middle" fill="#f3f0ff" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="3">VORTEX</text>
-  <text x="168" y="97" text-anchor="middle" fill="#a78bfa" font-family="Arial,sans-serif" font-size="9" letter-spacing="3">MOVE FORWARD</text>
+  <text x="168" y="97" text-anchor="middle" fill="#a78bfa" font-family="Arial,sans-serif" font-size="7" letter-spacing="1.5">SPORTSWEAR / PERFORMANCE</text>
 </svg>

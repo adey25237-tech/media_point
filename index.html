@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- page er title ar mobile setting ekhane -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEDIA POINT - Digital Studio</title>
@@ -8,43 +9,44 @@
 </head>
 <body>
 
+    <!-- ei menu diye page er section gulo te jawa jay -->
     <header>
         <div class="container nav-bar">
             <a href="#home" class="logo">
                 <span class="logo-badge">
-                    <img src="images/logo.svg" alt="Media Point logo">
+                    <img src="assets/logos/logo.svg" alt="Media Point logo">
                 </span>
                 <span>MEDIA POINT</span>
             </a>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" aria-current="location">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
             <button class="btn btn-primary desktop-cta" onclick="openModal('Free Trial Session')">Free Trial</button>
 
-            <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation" aria-controls="mobileMenu" aria-expanded="false">&#9776;</button>
         </div>
 
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#home">Home</a>
+            <a href="#home" aria-current="location">Home</a>
             <a href="#services">Services</a>
             <a href="#work">Work</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <button class="btn btn-primary" onclick="openModal('Free Trial Session')">Free Trial / Book Now</button>
+            <button class="btn btn-primary" onclick="openModal('Free Trial Session')">Free Trial</button>
         </div>
     </header>
 
+    <!-- page khulle prothome ei main part ta dekhabe -->
     <section id="home" class="hero">
         <div class="container hero-grid">
             <div>
-                <span class="tag">Creative Media &amp; Digital Studio</span>
-                <h1>All in One <span>Digital Studio</span> for Web, Motion &amp; Vision.</h1>
+                <span style="display: inline-block; background-color: #e0f2fe; border: 1px solid #7dd3fc; color: #075985; padding: 5px 14px; border-radius: 20px; font-size: 14px; margin-bottom: 16px;">MEDIA POINT · Creative Media &amp; Digital Studio</span>
+                <h1>All in One <br><span style="color: #0369a1; white-space: nowrap;">Digital Studio</span><br>for Web, Motion &amp; Vision.</h1>
                 <p>
                     We create clean visual identities, video edits, photography, and 2D/3D animations
                     for businesses, creators, and events.
@@ -53,21 +55,36 @@
                     <button class="btn btn-primary" onclick="openModal('Free Trial Project')">Free Trial Project</button>
                     <a href="#services" class="btn btn-outline">Explore Services</a>
                 </div>
+                <div class="hero-highlights" aria-label="Studio capabilities">
+                    <div class="hero-highlight">
+                        <strong>Branding</strong>
+                        <span>Visual identity</span>
+                    </div>
+                    <div class="hero-highlight">
+                        <strong>Photo + Video</strong>
+                        <span>Shoot and edit</span>
+                    </div>
+                    <div class="hero-highlight">
+                        <strong>2D + 3D</strong>
+                        <span>Motion design</span>
+                    </div>
+                </div>
             </div>
 
             <div class="card hero-card">
-                <img src="images/studio.svg" alt="Media Point Studio">
+                <img class="media-preview" src="assets/images/studio.svg" alt="Media Point Studio" tabindex="0" role="button" aria-label="Preview Studio Production image">
                 <div class="hero-status">
                     <div>
                         <strong>Studio Production</strong>
-                        <div style="font-size: 12px; color: #9caec0;">Design, Video &amp; Animation</div>
+                        <div style="font-size: 14px; color: #475569;">Design, Video &amp; Animation</div>
                     </div>
-                    <span class="status-badge">Available</span>
+                    <span style="background-color: #dcfce7; color: #166534; border: 1px solid #86efac; padding: 3px 10px; border-radius: 12px; font-size: 14px;">Available</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- amader service gulo ekhane card e dekhano -->
     <section id="services">
         <div class="container">
             <div class="section-header">
@@ -78,133 +95,168 @@
 
             <div class="services-grid">
                 <div class="card service-card">
-                    <img src="images/graphic-design.svg" alt="Graphic Design">
+                    <img class="media-preview" src="assets/images/services/graphic-design.svg" alt="Brand design toolkit with visual identity assets" tabindex="0" role="button" aria-label="Preview graphic design service image">
                     <h3>Graphic Design &amp; Branding</h3>
                     <ul class="service-list">
                         <li>Logos &amp; Brand Identity</li>
                         <li>Banners, Flyers &amp; Posters</li>
                         <li>Print &amp; Social Media Graphics</li>
                     </ul>
+                    <p class="service-delivery"><span>DELIVERABLE</span> Brand kit + social assets</p>
                     <div class="service-footer">
-                        <span style="color: #22d3ee;">01 / Service</span>
+                        <span class="service-number">01 / Service</span>
                         <button class="link-btn" onclick="openModal('Graphic Design & Branding')">Request Quote &rarr;</button>
                     </div>
                 </div>
 
                 <div class="card service-card">
-                    <img src="images/services/photography.svg" alt="Photography">
+                    <img class="media-preview" src="assets/images/services/photography.svg" alt="Studio camera and lens illustration" tabindex="0" role="button" aria-label="Preview photography service image">
                     <h3>Photography &amp; Videography</h3>
                     <ul class="service-list">
                         <li>Product &amp; Event Photography</li>
                         <li>Promotional &amp; Studio Shoots</li>
                         <li>Clean Framing &amp; Lighting Setup</li>
                     </ul>
+                    <p class="service-delivery"><span>DELIVERABLE</span> Edited, web-ready photo set</p>
                     <div class="service-footer">
-                        <span style="color: #22d3ee;">02 / Service</span>
+                        <span class="service-number">02 / Service</span>
                         <button class="link-btn" onclick="openModal('Photography & Videography')">Request Quote &rarr;</button>
                     </div>
                 </div>
 
                 <div class="card service-card">
-                    <img src="images/services/video-editing.svg" alt="Video Editing">
+                    <img class="media-preview" src="assets/images/services/video-editing.svg" alt="Video preview screen with editing timeline" tabindex="0" role="button" aria-label="Preview video editing service image">
                     <h3>Video Editing &amp; Post-Production</h3>
                     <ul class="service-list">
                         <li>Reels, Shorts &amp; Event Highlights</li>
                         <li>Transitions, Titles &amp; Audio Sync</li>
                         <li>Color Correction &amp; Export</li>
                     </ul>
+                    <p class="service-delivery"><span>DELIVERABLE</span> Final cut + social formats</p>
                     <div class="service-footer">
-                        <span style="color: #22d3ee;">03 / Service</span>
+                        <span class="service-number">03 / Service</span>
                         <button class="link-btn" onclick="openModal('Video Editing & Post-Production')">Request Quote &rarr;</button>
                     </div>
                 </div>
 
                 <div class="card service-card">
-                    <img src="images/services/animation.svg" alt="2D and 3D Animation">
+                    <img class="media-preview" src="assets/images/services/animation.svg" alt="Dimensional geometric motion design illustration" tabindex="0" role="button" aria-label="Preview animation service image">
                     <h3>2D &amp; 3D Animation</h3>
                     <ul class="service-list">
                         <li>2D Motion &amp; Explainer Clips</li>
                         <li>3D Product &amp; Scene Renders</li>
                         <li>Animated Intros &amp; Visuals</li>
                     </ul>
+                    <p class="service-delivery"><span>DELIVERABLE</span> Motion-ready 2D/3D export</p>
                     <div class="service-footer">
-                        <span style="color: #22d3ee;">04 / Service</span>
+                        <span class="service-number">04 / Service</span>
                         <button class="link-btn" onclick="openModal('2D & 3D Animation')">Request Quote &rarr;</button>
                     </div>
                 </div>
             </div>
 
-            <div class="center-action">
+            <div style="text-align: center; margin-top: 36px;">
                 <button class="btn btn-outline" onclick="openModal('All Services Inquiry')">Ask About Custom Work</button>
             </div>
         </div>
     </section>
 
+    <!-- logo ar product er kaj gulo ekhane dekhabo -->
     <section id="work">
         <div class="container">
             <div class="section-header">
                 <small>Sample Work</small>
                 <h2>SELECTED WORK</h2>
-                <p>Sample items across branding, product shots, and 3D visuals.</p>
+                <p>Sample items across branding and product photography.</p>
             </div>
 
+            <!-- notun logo dite ei card copy kore image path bodlabo -->
             <div class="work-category">
                 <h3>Logos &amp; Brand Marks</h3>
                 <div class="card">
                     <div class="portfolio-grid">
-                        <div class="logo-box" onclick="openModal('Logo Sample - Vortex')">
-                            <img src="images/portfolio/brand-1.svg" alt="Brand logo sample 1">
-                        </div>
-                        <div class="logo-box" onclick="openModal('Logo Sample - Nebula')">
-                            <img src="images/portfolio/brand-2.svg" alt="Brand logo sample 2">
-                        </div>
-                        <div class="logo-box" onclick="openModal('Logo Sample - Cyberix')">
-                            <img src="images/portfolio/brand-3.svg" alt="Brand logo sample 3">
-                        </div>
+                        <button class="logo-box" type="button" aria-label="View Brand logo sample 1">
+                            <img class="media-preview" src="assets/logos/portfolio/brand-1.svg" alt="Vortex sportswear identity, performance-led direction">
+                        </button>
+                        <button class="logo-box" type="button" aria-label="View Brand logo sample 2">
+                            <img class="media-preview" src="assets/logos/portfolio/brand-2.svg" alt="Nebula skincare identity, calm celestial direction">
+                        </button>
+                        <button class="logo-box" type="button" aria-label="View Brand logo sample 3">
+                            <img class="media-preview" src="assets/logos/portfolio/brand-3.svg" alt="Cyberix cybersecurity identity, bold futuristic direction">
+                        </button>
                     </div>
                 </div>
             </div>
 
+            <!-- notun product card copy kore chobi bodlabo. video dile file assets/videos e rakhbo:
+                 <div class="work-thumb"><video class="media-preview" tabindex="0" role="button" aria-label="Preview project video" preload="metadata"><source src="assets/videos/project.mp4" type="video/mp4"></video></div> -->
             <div class="work-category">
                 <h3>Product Photography</h3>
                 <div class="card">
                     <div class="portfolio-grid">
-                        <div class="work-thumb" onclick="openModal('Product Shot 1')">
-                            <img src="images/portfolio/product-1.svg" alt="Product Shot 1">
-                        </div>
-                        <div class="work-thumb" onclick="openModal('Product Shot 2')">
-                            <img src="images/portfolio/product-2.svg" alt="Product Shot 2">
-                        </div>
-                        <div class="work-thumb" onclick="openModal('Product Shot 3')">
-                            <img src="images/portfolio/product-3.svg" alt="Product Shot 3">
-                        </div>
+                        <button class="work-thumb" type="button" aria-label="View Product Shot 1">
+                            <img class="media-preview" src="assets/images/portfolio/products/product-1.svg" alt="Lumen skincare bottle photographed on a studio set">
+                            <span class="work-caption">LUMEN <span>Skincare bottle · soft studio light</span></span>
+                        </button>
+                        <button class="work-thumb" type="button" aria-label="View Product Shot 2">
+                            <img class="media-preview" src="assets/images/portfolio/products/product-2.svg" alt="Wireless headphones photographed on a dark studio set">
+                            <span class="work-caption">AUDIO <span>Headphones · sculpted highlights</span></span>
+                        </button>
+                        <button class="work-thumb" type="button" aria-label="View Product Shot 3">
+                            <img class="media-preview" src="assets/images/portfolio/products/product-3.svg" alt="Aura fragrance bottle and packaging on a studio set">
+                            <span class="work-caption">AURA <span>Fragrance · luminous packaging</span></span>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="work-category">
-                <h3>3D Models &amp; Scenes</h3>
-                <div class="card">
-                    <div class="portfolio-grid">
-                        <div class="work-thumb" onclick="openModal('3D Render 1')">
-                            <img src="images/portfolio/render-1.svg" alt="3D Render 1">
-                        </div>
-                        <div class="work-thumb" onclick="openModal('3D Render 2')">
-                            <img src="images/portfolio/render-2.svg" alt="3D Render 2">
-                        </div>
-                        <div class="work-thumb" onclick="openModal('3D Render 3')">
-                            <img src="images/portfolio/render-3.svg" alt="3D Render 3">
-                        </div>
+        </div>
+    </section>
+
+    <!-- amader team member der info ar photo ekhane -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <small>PROJECT CREDITS</small>
+                <h2>This Project is Created By</h2>
+            </div>
+
+            <div class="team-grid">
+                <article class="card team-card">
+                    <div class="team-photo-frame">
+                        <span class="team-initials" aria-hidden="true">AD</span>
+                        <img class="team-photo media-preview" src="assets/team/arko.svg" alt="Arko Dey" tabindex="0" role="button" aria-label="Preview Arko Dey photo">
                     </div>
-                </div>
+                    <h3>Arko Dey</h3>
+                    <p class="team-role">Lead Developer &amp; Main Coder</p>
+                </article>
+
+                <article class="card team-card">
+                    <div class="team-photo-frame">
+                        <span class="team-initials" aria-hidden="true">RD</span>
+                        <img class="team-photo media-preview" src="assets/team/rajashree.svg" alt="Rajashree Deb" tabindex="0" role="button" aria-label="Preview Rajashree Deb photo">
+                    </div>
+                    <h3>Rajashree Deb</h3>
+                    <p class="team-role">Graphic Designer</p>
+                </article>
+
+                <article class="card team-card">
+                    <div class="team-photo-frame">
+                        <span class="team-initials" aria-hidden="true">SG</span>
+                        <img class="team-photo media-preview" src="assets/team/surajit.svg" alt="Surajit Gharai" tabindex="0" role="button" aria-label="Preview Surajit Gharai photo">
+                    </div>
+                    <h3>Surajit Gharai</h3>
+                    <p class="team-role">Graphic Designer</p>
+                </article>
             </div>
         </div>
     </section>
 
+    <!-- about, contact ar social link gulo ekhane -->
     <footer id="about">
         <div class="container">
             <div class="footer-grid">
-                <div id="about-us">
+                <div>
                     <h4>About Us</h4>
                     <p>
                         MEDIA POINT is a creative media studio based in West Bengal, India. We specialize in graphic design, photography, videography, and 2D/3D animation to help businesses and creators bring their ideas to life.
@@ -214,17 +266,25 @@
                 <div id="contact">
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li>Email: media@mediapoint@gmail.com</li>
-                        <li>Phone: +91 9088164721</li>
+                        <li>Email: <a href="mailto:media.point@gmail.com">media.point@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+919800050121">+91 9800050121</a></li>
                         <li>Location: West Bengal, India</li>
                     </ul>
                 </div>
             </div>
 
-            
+            <div class="footer-bottom">
+                <p>&copy; 2026 MEDIA POINT. All rights reserved.</p>
+                <nav class="footer-social-links" aria-label="Social and portfolio links">
+                    <a href="#work">Portfolio</a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>
+                </nav>
+            </div>
         </div>
     </footer>
 
+    <!-- button click korle inquiry form ta ekhane khulbe -->
     <div class="modal-backdrop" id="inquiryModal">
         <div class="modal-box">
             <button class="close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
@@ -248,8 +308,22 @@
         </div>
     </div>
 
+    <!-- portfolio-r chobi click korle boro kore dekhabe -->
+    <!-- Media preview modal ekhane thakbe -->
+    <div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Media preview" aria-hidden="true">
+        <button class="image-lightbox-close" id="closeImageLightbox" type="button" aria-label="Close media preview">&times;</button>
+        <figure class="image-lightbox-content">
+            <img id="lightboxImage" alt="" hidden>
+            <video id="lightboxVideo" controls playsinline preload="auto" hidden></video>
+            <figcaption id="lightboxCaption"></figcaption>
+            <p class="media-video-status" id="mediaVideoStatus" role="status" aria-live="polite" hidden></p>
+        </figure>
+    </div>
+
+    <!-- form submit korle ei message ta dekhabe -->
     <div class="toast" id="toastBox">Request submitted successfully!</div>
 
+    <!-- menu ar button gulo js/script.js file diye kaj kore -->
     <script src="js/script.js"></script>
 </body>
 </html>
