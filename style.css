@@ -54,10 +54,9 @@
         }
 
         .logo-badge {
-            width: 34px;
-            height: 34px;
+            width: 80px;
+            height: 80px;
             border-radius: 8px;
-            background: linear-gradient(135deg, #0ea5e9, #2563eb);
             display: inline-flex;
             align-items: center;
             justify-content: center;
