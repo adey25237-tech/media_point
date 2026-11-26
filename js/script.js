@@ -202,6 +202,8 @@ function openMediaPreview(media) {
 
         lightboxVideo.hidden = false;
         lightboxVideo.poster = media.poster || "";
+        // preview video-te loop thakle modal-eo loop chole
+        lightboxVideo.loop = media.loop;
         lightboxVideo.src = source;
         lightboxVideo.controls = true;
         lightboxVideo.load();

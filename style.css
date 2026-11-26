@@ -325,6 +325,16 @@
             margin-bottom: 14px;
         }
 
+        .hero-card video {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            margin-bottom: 14px;
+            border-radius: 10px;
+            background-color: #020617;
+            object-fit: cover;
+        }
+
         .hero-status {
             display: flex;
             justify-content: space-between;
